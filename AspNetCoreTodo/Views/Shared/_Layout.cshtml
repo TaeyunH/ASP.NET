@@ -8,8 +8,20 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AspNetCoreTodo.styles.css" asp-append-version="true" />
 </head>
+
 <body>
     <header>
+        <ul class="nav navbar-nav">
+            <li>
+                <a asp-controller="Todo" asp-action="Index">My to-dos</a>
+            </li>
+            <li><a asp-area="" asp-controller="Home" asp-action="About">
+                About
+            </a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Contact">
+                Contact
+            </a></li>
+        </ul>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AspNetCoreTodo</a>
